@@ -1,0 +1,12 @@
+# put in /etc/systemd/network/ and start as systemctl service
+[Match]
+Name=eth0
+Host=odroidspark
+
+[Network]
+Address=192.168.1.19/24
+Gateway=192.168.1.1
+#DNS=84.200.69.80
+#DNS=84.200.70.40
+DNS=208.67.220.220
+DNS=208.67.222.222
