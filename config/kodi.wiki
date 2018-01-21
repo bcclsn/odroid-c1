@@ -1,0 +1,6 @@
+menu spegnimento:
+remote.xml modificato + pacman -S polkit + usermod -aG lock kodi
+
+per rimuovere la voce exit, basta aggiungere (creare il file se non presente):
+<showexitbutton>false</showexitbutton>
+al file /var/lib/kodi/.kodi/userdata/advancedsettings.xml
