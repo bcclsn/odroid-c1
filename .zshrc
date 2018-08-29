@@ -92,7 +92,9 @@ source $HOME/.zsh/setopt.zsh
   fi
 
 ##echo "inizio blocco info"
-#echo ""
+echo ""
+echo "$fg[cyan] Last -Syu: $reset_color $(grep "pacman -Syu" /var/log/pacman.log | tail -n1 | cut -c 2- | cut -c -16)"
+echo "$fg[cyan] Kernel:    $reset_color $(uname -r)"
 #echo "$fg[cyan] HDD1:$reset_color $(df -h | grep "/dev/sda1" | cut -c 23- | cut -c-4)/$(df -h | grep "/dev/sda1" | cut -c 17- | cut -c-4)  - $fg[cyan] HDD2:$reset_color $(df -h | grep "/dev/sdb3" | cut -c 23- | cut -c-4)/$(df -h | grep "/dev/sdb3" | cut -c 17- | cut -c-4)  - $fg[cyan] RAM:$reset_color $(free -m | grep "Mem:" | cut -c 26- | cut -c -4)/$(free -m | grep "Mem:" | cut -c 15- | cut -c -4)  - $fg[cyan] CPU Temp:$reset_color $(cut -c 1,2 /sys/class/thermal/thermal_zone0/temp)°C"
-#echo ""
+echo ""
 ##echo "fine blocco info"
