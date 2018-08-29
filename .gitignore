@@ -1,6 +1,8 @@
 .cache/
 .config/
 .gitconfig
+.java/
+.jd/
 .oh-my-zsh/.gitignore
 .oh-my-zsh/CONTRIBUTING.md
 .oh-my-zsh/LICENSE.txt
