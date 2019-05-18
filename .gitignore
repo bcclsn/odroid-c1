@@ -13,6 +13,7 @@
 .oh-my-zsh/templates/
 .oh-my-zsh/themes/
 .oh-my-zsh/tools/
+.oh-my-zsh/CODE_OF_CONDUCT.md/
 .pyload/
 .wget-hsts
 .zcompdump-alarm-5.4.2
