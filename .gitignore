@@ -14,7 +14,7 @@
 .oh-my-zsh/themes/
 .oh-my-zsh/tools/
 .oh-my-zsh/.github/
-.oh-my-zsh/CODE_OF_CONDUCT.md/
+.oh-my-zsh/CODE_OF_CONDUCT.md
 .pyload/
 .wget-hsts
 .zcompdump
