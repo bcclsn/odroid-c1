@@ -26,4 +26,4 @@
 .zsh_history
 PyPlex/
 config/smb.conf
-.wiringPi
+wiringPi/
