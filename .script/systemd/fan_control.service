@@ -1,0 +1,7 @@
+[Unit]
+Description=Fan Control
+
+[Service]
+Type=oneshot
+User=odroid
+ExecStart=/home/odroid/./.script/fan_control
