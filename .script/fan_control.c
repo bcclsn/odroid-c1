@@ -28,24 +28,24 @@ int os_read_d(char  *fname) {                                         // thanks 
 }
 
 void main(void) {
-   int temperature;
-   int counter = 0;
+  int temperature;
+  int counter = 0;
 
-   wiringPiSetup();
-   pinMode(GPIO_PIN, OUTPUT);
+  wiringPiSetup();
+  pinMode(GPIO_PIN, OUTPUT);
 
-   while(1) {
-      temperature = os_read_d(FTEMP);
+  while(1) {
+     temperature = os_read_d(FTEMP);
 
-      if (temperature >= THRESHOLD) {
-         digitalWrite(GPIO_PIN, HIGH);                                 // start the fan
-         counter = 0;                                                  // reset the counter
-      } else {                                                         // else if temperature is under the threshold
-         counter++;                                                    // start the counter
-         if (counter>FORCED_ON) {                                      // after 12 cycle under the threshold (cycle * delay = one minute)
-            digitalWrite(GPIO_PIN, LOW);                               // stop the fan
-         }
-      }
-      delay(5000);
-   }
+     if (temperature >= THRESHOLD) {
+        digitalWrite(GPIO_PIN, HIGH);                                 // start the fan
+        counter = 0;                                                  // reset the counter
+     } else {                                                         // else if temperature is under the threshold
+        counter++;                                                    // start the counter
+        if (counter>FORCED_ON) {                                      // after 12 cycle under the threshold (cycle * delay = one minute)
+           digitalWrite(GPIO_PIN, LOW);                               // stop the fan
+        }
+     }
+     delay(5000);
+  }
 }
