@@ -3,5 +3,7 @@ Description=Fan Control
 
 [Service]
 Type=oneshot
-User=odroid
 ExecStart=/home/odroid/./.script/fan_control
+
+[Install]
+WantedBy=multi-user.target
