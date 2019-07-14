@@ -3,6 +3,7 @@ Description=Fan Control
 
 [Service]
 Type=oneshot
+RemainAfterExit=yes
 ExecStart=/home/odroid/./.script/fan_control
 
 [Install]
