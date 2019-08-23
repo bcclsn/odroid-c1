@@ -30,6 +30,7 @@ int os_read_d(char  *fname) {                                         // thanks 
 void main(void) {
   int temperature;
   int counter = 0;
+  int status = -1;
 
   wiringPiSetup();
   pinMode(GPIO_PIN, OUTPUT);
@@ -40,12 +41,15 @@ void main(void) {
      if (temperature >= THRESHOLD) {
         digitalWrite(GPIO_PIN, HIGH);                                 // start the fan
         counter = 0;                                                  // reset the counter
+        status  = 1;
      } else {                                                         // else if temperature is under the threshold
         counter++;                                                    // start the counter
         if (counter > FORCED_ON) {                                    // after 12 cycle under the threshold (cycle * delay = one minute)
            digitalWrite(GPIO_PIN, LOW);                               // stop the fan
+           status = 0;
         }
      }
+     printf("temperature: %d    status: %d\n", temperature, status);  // print on stdout for debug
      delay(5000);
   }
 }
