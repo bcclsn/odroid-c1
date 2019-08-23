@@ -2,7 +2,7 @@
  ============================================================================
  Name        : fan_control.c
  Author      : bcclsn
- Version     : 1.0
+ Version     : 1.1
  Copyright   : null
  Description : controlla l'accensione e lo spegnimento di una ventola tramite
                transistor e pin gpio
@@ -16,14 +16,15 @@
 #define GPIO_PIN  1
 
 int os_read_d(char  *fname) {                                         // thanks to vbextreme
-  FILE* fd = fopen(fname, "r");
+  FILE* fp = fopen(fname, "r");
 
-  if (fd == NULL) {
+  if (fp == NULL) {
     return -1;
   }
   char inp[64];
   inp[0] = 0;
-  fgets(inp, 64, fd);
+  fgets(inp, 64, fp);
+  fclose(fp);
   return strtoul(inp, NULL, 10);
 }
 
