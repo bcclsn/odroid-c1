@@ -9,7 +9,6 @@
  ============================================================================
  */
 #include <wiringPi.h>
-#include <stdio.h>
 
 #define FTEMP     "/sys/class/thermal/thermal_zone0/temp"
 #define THRESHOLD 60000                                               // first two MSD (degree)
