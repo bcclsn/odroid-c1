@@ -42,7 +42,7 @@ void main(void) {
         counter = 0;                                                  // reset the counter
      } else {                                                         // else if temperature is under the threshold
         counter++;                                                    // start the counter
-        if (counter>FORCED_ON) {                                      // after 12 cycle under the threshold (cycle * delay = one minute)
+        if (counter > FORCED_ON) {                                    // after 12 cycle under the threshold (cycle * delay = one minute)
            digitalWrite(GPIO_PIN, LOW);                               // stop the fan
         }
      }
