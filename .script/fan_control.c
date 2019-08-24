@@ -61,13 +61,13 @@ void main(void) {
       temperature = os_read_d(FTEMP);
 
       if (temperature >= THRESHOLD) {
-         //digitalWrite(GPIO_PIN, HIGH);                                          // start the fan
+         digitalWrite(GPIO_PIN, HIGH);                                          // start the fan
          curr_status = 1;                                                       // update the current status
          counter     = 0;                                                       // reset the counter
       } else {                                                                  // else if temperature is under the threshold
          counter++;                                                             // start the counter
          if (counter > FORCED_ON) {                                             // after 12 cycle under the threshold (cycle * delay = one minute)
-            //digitalWrite(GPIO_PIN, LOW);                                        // stop the fan
+            digitalWrite(GPIO_PIN, LOW);                                        // stop the fan
             curr_status = 0;
          }
       }
