@@ -27,3 +27,4 @@
 PyPlex/
 config/smb.conf
 wiringPi/
+.viminfo
