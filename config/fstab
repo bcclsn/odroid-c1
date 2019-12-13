@@ -1,0 +1,9 @@
+# 
+# 13 dic 2019
+#
+# /etc/fstab: static file system information
+#
+# <file system>		<dir>		<type>		<options>		<dump>	<pass>
+#
+/dev/sda1		/mnt/HDD1	ext4		defaults,nofail    	0  	2
+#/dev/sdb1		/mnt/HDD2	ntfs-3g		defaults,nofail    	0  	2
