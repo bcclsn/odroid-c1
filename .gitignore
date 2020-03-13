@@ -18,10 +18,10 @@
 .pyload/
 .wget-hsts
 .zcompdump
-.zcompdump-alarm-5.4.2
 .zcompdump-odroidspark-5.4.2
 .zcompdump-odroidspark-5.5.1
 .zcompdump-odroidspark-5.7.1
+.zcompdump-odroidspark-5.8
 .zsh-update
 .zsh_history
 PyPlex/
