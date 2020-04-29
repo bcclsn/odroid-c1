@@ -1,0 +1,11 @@
+0.  pacman-key
+1.  set mirror
+2.  set pacman options
+3.  install ntrfs-3g sudo wget curl git base-devel zsh tmux vim (remove vi)
+4.  set locale
+5.  create user, remove alarm and set password
+6.  hostname/hosts
+7.  mkdir /mnt and change permission
+8.  move home and set oh-my-zsh
+9.  install program 
+10. set all service
