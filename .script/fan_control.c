@@ -2,12 +2,16 @@
  ============================================================================
  Name        : fan_control.c
  Author      : bcclsn
- Version     : 1.3
+ Version     : 1.4
  Copyright   : null
  Description : controlla l'accensione e lo spegnimento di una ventola tramite
                transistor e pin gpio
- ============================================================================
+ Comment     : build with gcc -o fan_control fan_control.c -lwiringPi 
+                          -lwiringPiDev -lm -lpthread -lrt -lcrypt
+============================================================================
  */
+
+#include <stdlib.h>
 #include <wiringPi.h>
 
 #define FTEMP     "/sys/class/thermal/thermal_zone0/temp"
