@@ -26,9 +26,8 @@
 int os_read_d(char  *fname) {                                                   // thanks to vbextreme
    FILE *fp = fopen(fname, "r");
 
-   if (fp == NULL) {
+   if (fp == NULL)
      return -1;
-   }
 
    char inp[64];
    inp[0] = 0;
