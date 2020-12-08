@@ -1,0 +1,10 @@
+[Unit]
+Description=Restore Kodi Estuary Skin Setting
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/cp /home/odroid/config/settings.xml /home/odroid/.kodi/userdata/addon_data/skin.estuary/
+
+[Install]
+WantedBy=multi-user.target
