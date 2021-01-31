@@ -13,9 +13,9 @@
 .zcompdump-odroidspark-5.8
 .zsh-update
 .zsh_history
-PyPlex/
-config/smb.conf
-wiringPi/
 .viminfo
 .kodi/
 .ssh/
+PyPlex/
+config/smb.conf
+wiringPi/
