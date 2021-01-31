@@ -18,3 +18,4 @@ config/smb.conf
 wiringPi/
 .viminfo
 .kodi/
+.ssh/
