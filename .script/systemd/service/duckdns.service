@@ -1,0 +1,6 @@
+[Unit]
+Description=Esegue DuckDNS ogni ora
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash /home/odroid/.script/duckdns.sh 

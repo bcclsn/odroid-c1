@@ -1,0 +1,10 @@
+[Unit]
+Description=Esegue DuckDNS ogni ora
+
+[Timer]
+OnCalendar=hourly
+Unit=ducknds.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
