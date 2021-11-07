@@ -16,6 +16,7 @@
 .viminfo
 .kodi/
 .ssh/
+.duckdns/
 PyPlex/
 config/smb.conf
 wiringPi/
