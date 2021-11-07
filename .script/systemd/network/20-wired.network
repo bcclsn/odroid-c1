@@ -4,7 +4,11 @@ Name=eth0
 Host=odroidspark
 
 [Network]
-Address=192.168.1.19/24
-Gateway=192.168.1.1
+Address=192.168.1.18/24
+Gateway=192.168.1.254
 DNS=84.200.69.80
 DNS=84.200.70.40
+DNSSEC=no
+
+[DHCP]
+RouteMetric=10
