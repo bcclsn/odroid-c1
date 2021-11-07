@@ -20,3 +20,4 @@
 PyPlex/
 config/smb.conf
 wiringPi/
+.script/duckdns.sh
